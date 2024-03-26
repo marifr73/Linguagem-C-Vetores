@@ -5,7 +5,7 @@ int main(){
 	setlocale(LC_ALL,"Portuguese");
 int n[10], i, m;
 	for(i = 0; i < 10; i++){
-	printf("Informe o %iº número: ", i+1);
+	printf("Informe o %iÂº nÃºmero: ", i+1);
 	scanf("%i", &n[i]);
 }
 m = n[0];
@@ -15,5 +15,5 @@ m = n[0];
 		m = n[i];
 }
 }
- 	printf("O maior número informado foi: %i\n", m);
+ 	printf("O maior nÃºmero informado foi: %i\n", m);
 }
