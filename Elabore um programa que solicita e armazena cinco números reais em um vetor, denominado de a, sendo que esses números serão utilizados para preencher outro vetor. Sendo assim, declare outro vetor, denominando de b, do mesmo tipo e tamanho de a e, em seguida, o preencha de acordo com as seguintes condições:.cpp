@@ -2,10 +2,15 @@
 #include<locale.h>
 
 int main(){
+//Condições:
+//•Se o índice do vetor a for zero, insira em b o respectivo valor de a;
+//•Se o índice de a for par, insira em b o respectivo valor de a multiplicado por 5;
+//•Se o índice do vetor a for ímpar, insira em b o respectivo valor a somado com 5;
+//Ao final, o programa deve exibir o conteúdo dos vetores a e b.
 	setlocale(LC_ALL,"Portuguese");
 	int a[5], b[5], i;
 	for(i = 0; i < 5; i++){
-		printf("Informe o %i� n�mero: ", i+1);
+		printf("Informe o %iº número: ", i+1);
 		scanf("%i", &a[i]);
 	}
 	for(i = 0; i < 5; i++){
