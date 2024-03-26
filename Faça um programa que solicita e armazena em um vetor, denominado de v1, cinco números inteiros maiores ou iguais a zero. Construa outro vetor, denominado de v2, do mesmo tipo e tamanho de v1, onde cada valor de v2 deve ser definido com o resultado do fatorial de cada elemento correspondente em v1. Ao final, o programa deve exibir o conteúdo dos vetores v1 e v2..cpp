@@ -8,11 +8,11 @@ int main() {
     int v1[5], v2[5], i;
 
     for (i = 0; i < 5; i++) {
-        printf("\nInforme o %iº número: ", i + 1);
+        printf("\nInforme o %iÂº nÃºmero: ", i + 1);
         scanf("%i", &v1[i]);
 
         if (v1[i] < 0) {
-            printf("Informe o número novamente!\n");
+            printf("Informe o nÃºmero novamente!\n");
             i--;
         } else {
             v2[i] = f(v1[i]);
