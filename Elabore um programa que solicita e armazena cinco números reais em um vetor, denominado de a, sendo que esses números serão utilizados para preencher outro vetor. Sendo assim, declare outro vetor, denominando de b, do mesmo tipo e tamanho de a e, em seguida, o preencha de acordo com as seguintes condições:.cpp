@@ -29,7 +29,10 @@ int main(){
             b[i] = a[i] + 5;
             printf("\nO valor de a[%.1d] = %.1f e o de b[%.1d] = %.1f\n\n", i+1, a[i], i+1, b[i]);
         }
+        //caso o número seja negativo.
+        else if(a[i] < 0){
+            printf("ERRO");
+        }
     }
-    
     return 0;
 }
