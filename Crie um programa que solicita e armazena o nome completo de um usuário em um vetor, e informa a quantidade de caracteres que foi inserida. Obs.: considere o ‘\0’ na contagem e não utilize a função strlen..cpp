@@ -7,10 +7,16 @@ char n[50], i = 0, cont = 1;
 	printf("Digite o seu nome: ");
 	gets(n);
 
-	while(n[i] != '\0') {
+	for(i = 0;n[i] != '\0';i++){
+		cont++;
+	}	
+
+	//Antes
+	/*while(n[i] != '\0') {
         	i++;
 		cont++;
-    }
+    	}*/
+	
     printf("O nome tem %i caracteres, incluindo o '\\0'!\n", cont);
     return 0;
 }
