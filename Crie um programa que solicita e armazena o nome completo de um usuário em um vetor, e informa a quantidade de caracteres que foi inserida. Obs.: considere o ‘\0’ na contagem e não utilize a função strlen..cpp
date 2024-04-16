@@ -3,14 +3,13 @@
 
 int main(){
 	setlocale(LC_ALL,"Portuguese");
-char n[50], i = 0, cont = 1;
+char n[50], i = 0;
 	printf("Digite o seu nome: ");
-	gets(n);
+	fgets(n, sizeof(n), stdin);
 
 	while(n[i] != '\0') {
         	i++;
-		cont++;
     }
-    printf("O nome tem %i caracteres, incluindo o '\\0'!\n", cont);
+    printf("O nome tem %i caracteres, incluindo o '\\0'!\n", i);
     return 0;
 }
