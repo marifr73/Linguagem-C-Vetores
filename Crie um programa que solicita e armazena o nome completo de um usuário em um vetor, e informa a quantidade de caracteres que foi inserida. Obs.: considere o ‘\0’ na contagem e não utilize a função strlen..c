@@ -3,11 +3,12 @@
 
 int main(){
 	setlocale(LC_ALL,"Portuguese");
-char n[50], i = 0, cont = 1;
+	char n[50]; 
+	int i, cont = 1;
 	printf("Digite o seu nome: ");
 	gets(n);
 
-	for(i = 0;n[i] != '\0'){
+	for(i = 0; n[i] != '\0'; i++){
 		cont++;
 	}
 	
@@ -15,6 +16,7 @@ char n[50], i = 0, cont = 1;
         	i++;
 		cont++;
    	 }*/
+	
     printf("O nome tem %i caracteres, incluindo o '\\0'!\n", cont);
     return 0;
 }
